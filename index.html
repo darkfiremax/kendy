@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kendy – Agencia Audiovisual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+
+    <ul class="nav-links nav-left">
+      <li><a href="#inicio" data-i18n="nav_inicio">Inicio</a></li>
+      <li><a href="#experiencia" data-i18n="nav_experiencia">Experiencia</a></li>
+    </ul>
+
+    <a href="#inicio" class="nav-logo">
+      <img src="img/kendy.PNG" alt="Kendy Agencia Audiovisual">
+    </a>
+
+    <ul class="nav-links nav-right">
+      <li><a href="#portafolio" data-i18n="nav_proyectos">Proyectos</a></li>
+      <li><a href="#contacto" data-i18n="nav_contacto">Contáctame</a></li>
+      <li>
+        <button class="lang-switcher" id="langBtn" aria-label="Cambiar idioma">
+          <span class="lang-active">ES</span>
+          <span class="lang-sep">|</span>
+          <span class="lang-other">EN</span>
+        </button>
+      </li>
+    </ul>
+
+    <!-- Mobile drawer -->
+    <div class="nav-drawer">
+      <a href="#inicio" data-i18n="nav_inicio">Inicio</a>
+      <a href="#experiencia" data-i18n="nav_experiencia">Experiencia</a>
+      <a href="#portafolio" data-i18n="nav_proyectos">Proyectos</a>
+      <a href="#contacto" data-i18n="nav_contacto">Contáctame</a>
+      <button class="lang-switcher lang-switcher--drawer" id="langBtnDrawer">
+        <span class="lang-active">ES</span>
+        <span class="lang-sep">|</span>
+        <span class="lang-other">EN</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- INICIO -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="rotating-titles">
+          <h1 class="title active" data-i18n="hero_t1">Agencia Audiovisual</h1>
+          <h1 class="title" data-i18n="hero_t2">Fotografía &amp; Video</h1>
+          <h1 class="title" data-i18n="hero_t3">Storytelling Visual</h1>
+          <h1 class="title" data-i18n="hero_t4">Contenido Creativo</h1>
+        </div>
+        <p class="hero-bio" data-i18n="hero_bio">
+          Kendy es una agencia audiovisual dedicada a contar historias únicas a través de
+          la fotografía, el video y el contenido creativo.
+        </p>
+        <a href="#contacto" class="btn-primary" data-i18n="hero_cta">Trabajemos juntos →</a>
+      </div>
+      <div class="hero-image">
+        <img src="img/fotokendy.jpg" alt="Kendy Santander" class="hero-photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia" class="photography-section">
+    <div class="section-header">
+      <h2 data-i18n="exp_title">Experiencia</h2>
+      <a href="#portafolio" class="view-all" data-i18n="exp_viewall">ver proyectos →</a>
+    </div>
+    <div class="destinations-grid">
+
+      <div class="destination-card">
+        <div class="dest-img">
+          <img src="https://images.unsplash.com/photo-1698235301688-6b5b79dac3d5?w=600&q=80" alt="Fotografía Comercial" loading="lazy">
+        </div>
+        <div class="dest-info">
+          <h3 data-i18n="exp_c1_title">Fotografía Comercial</h3>
+          <p data-i18n="exp_c1_sub">Marcas &amp; Productos</p>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <div class="dest-img">
+          <img src="https://images.unsplash.com/photo-1625961332635-3d18bbad67fa?w=600&q=80" alt="Video Corporativo" loading="lazy">
+        </div>
+        <div class="dest-info">
+          <h3 data-i18n="exp_c2_title">Video Corporativo</h3>
+          <p data-i18n="exp_c2_sub">Empresas &amp; Instituciones</p>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <div class="dest-img">
+          <img src="https://images.unsplash.com/photo-1693681866115-29dd5d52c910?w=600&q=80" alt="Contenido Digital" loading="lazy">
+        </div>
+        <div class="dest-info">
+          <h3 data-i18n="exp_c3_title">Contenido Digital</h3>
+          <p data-i18n="exp_c3_sub">Redes Sociales</p>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <div class="dest-img">
+          <img src="https://images.unsplash.com/photo-1762674770144-7792749ba70d?w=600&q=80" alt="Eventos" loading="lazy">
+        </div>
+        <div class="dest-info">
+          <h3 data-i18n="exp_c4_title">Eventos</h3>
+          <p data-i18n="exp_c4_sub">Cobertura Fotográfica</p>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <div class="dest-img">
+          <img src="https://images.unsplash.com/photo-1758613656365-5195c3b96ba3?w=600&q=80" alt="Retratos" loading="lazy">
+        </div>
+        <div class="dest-info">
+          <h3 data-i18n="exp_c5_title">Retratos</h3>
+          <p data-i18n="exp_c5_sub">Personales &amp; Profesionales</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PORTAFOLIO -->
+  <section id="portafolio" class="portfolio-section">
+    <div class="portfolio-inner">
+
+      <!-- Header -->
+      <div class="portfolio-header">
+        <div class="portfolio-title-block">
+          <span class="portfolio-label" data-i18n="port_label">MI TRABAJO</span>
+          <h2 data-i18n="port_title">Portafolio Audiovisual</h2>
+        </div>
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all" data-i18n="port_f_all">Todo</button>
+          <button class="filter-btn" data-filter="video" data-i18n="port_f_showreel">Videos</button>
+          <button class="filter-btn" data-filter="foto" data-i18n="port_f_foto">Fotos</button>
+        </div>
+      </div>
+
+      <!-- Featured video -->
+      <div class="video-featured" data-category="video">
+        <a href="https://youtu.be/H3v22yraXQQ" target="_blank" rel="noopener" class="video-thumb">
+          <img src="https://img.youtube.com/vi/H3v22yraXQQ/maxresdefault.jpg" alt="Showreel Kendy" loading="lazy">
+          <div class="video-thumb-play"><i class="fa-brands fa-youtube"></i></div>
+        </a>
+      </div>
+
+      <!-- Video grid -->
+      <div class="video-grid">
+        <a href="https://youtu.be/jEA8gi8oI5I" target="_blank" rel="noopener" class="video-thumb" data-category="video">
+          <img src="https://img.youtube.com/vi/jEA8gi8oI5I/maxresdefault.jpg" alt="Video Kendy" loading="lazy">
+          <div class="video-thumb-play"><i class="fa-brands fa-youtube"></i></div>
+        </a>
+        <a href="https://youtu.be/zJ_U7v56JAI" target="_blank" rel="noopener" class="video-thumb" data-category="video">
+          <img src="https://img.youtube.com/vi/zJ_U7v56JAI/maxresdefault.jpg" alt="Video Kendy" loading="lazy">
+          <div class="video-thumb-play"><i class="fa-brands fa-youtube"></i></div>
+        </a>
+        <a href="https://youtu.be/qkLEVeCJYKg" target="_blank" rel="noopener" class="video-thumb" data-category="video">
+          <img src="https://img.youtube.com/vi/qkLEVeCJYKg/maxresdefault.jpg" alt="Video Kendy" loading="lazy">
+          <div class="video-thumb-play"><i class="fa-brands fa-youtube"></i></div>
+        </a>
+        <a href="https://youtu.be/-dz2h1TGGBE" target="_blank" rel="noopener" class="video-thumb" data-category="video">
+          <img src="https://img.youtube.com/vi/-dz2h1TGGBE/maxresdefault.jpg" alt="Video Kendy" loading="lazy">
+          <div class="video-thumb-play"><i class="fa-brands fa-youtube"></i></div>
+        </a>
+      </div>
+
+      <!-- CTA -->
+      <div class="portfolio-cta">
+        <p data-i18n="port_cta_text">Visita mi canal para ver todos mis proyectos audiovisuales</p>
+        <a href="https://www.youtube.com/@kendysantander" class="btn-youtube" target="_blank" rel="noopener">
+          <i class="fa-brands fa-youtube"></i>
+          <span data-i18n="port_cta_btn">Ir a mi Canal</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HERRAMIENTAS -->
+  <section id="herramientas" class="skills-section">
+    <div class="skills-header">
+      <span class="skills-label" data-i18n="skills_label">MIS HERRAMIENTAS</span>
+      <h2 data-i18n="skills_title">Competencias y Habilidades</h2>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <svg class="adobe-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Adobe Illustrator">
+          <rect width="100" height="100" rx="20" fill="#FF9A00"/>
+          <text x="50" y="66" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-weight="900" font-size="40" letter-spacing="-1">Ai</text>
+        </svg>
+        <h3>Adobe<br>Illustrator</h3>
+        <p data-i18n="skills_illustrator">Vectorización &amp; Branding</p>
+      </div>
+
+      <div class="skill-card">
+        <svg class="adobe-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Adobe Photoshop">
+          <rect width="100" height="100" rx="20" fill="#31A8FF"/>
+          <text x="50" y="66" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-weight="900" font-size="40" letter-spacing="-1">Ps</text>
+        </svg>
+        <h3>Adobe<br>Photoshop</h3>
+        <p data-i18n="skills_photoshop">Edición &amp; Retoque</p>
+      </div>
+
+      <div class="skill-card">
+        <svg class="adobe-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Adobe Premiere Pro">
+          <rect width="100" height="100" rx="20" fill="#9999FF"/>
+          <text x="50" y="66" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-weight="900" font-size="40" letter-spacing="-1">Pr</text>
+        </svg>
+        <h3>Adobe<br>Premiere Pro</h3>
+        <p data-i18n="skills_premiere">Edición de Video</p>
+      </div>
+
+      <div class="skill-card">
+        <svg class="adobe-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Adobe Audition">
+          <rect width="100" height="100" rx="20" fill="#00E4BB"/>
+          <text x="50" y="66" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-weight="900" font-size="40" letter-spacing="-1">Au</text>
+        </svg>
+        <h3>Adobe<br>Audition</h3>
+        <p data-i18n="skills_audition">Edición de Audio</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTÁCTAME -->
+  <section id="contacto" class="contact-section">
+    <div class="contact-card">
+      <h2 data-i18n="contact_title">Trabajemos juntos</h2>
+      <p class="contact-card-sub" data-i18n="contact_subtitle">Estoy lista para llevar tu próximo proyecto visual al siguiente nivel.</p>
+
+      <div class="contact-pills">
+        <a href="mailto:kendysantander@gmail.com" class="contact-pill">
+          <i class="fa-solid fa-envelope"></i>
+          <span>kendysantander@gmail.com</span>
+        </a>
+        <a href="tel:+573107734700" class="contact-pill">
+          <i class="fa-solid fa-phone"></i>
+          <span>310 773 47 00</span>
+        </a>
+        <span class="contact-pill contact-pill--plain">
+          <i class="fa-solid fa-location-dot"></i>
+          <span data-i18n="contact_location">Medellín, Colombia</span>
+        </span>
+      </div>
+
+      <div class="contact-social">
+        <a href="https://www.instagram.com/kendysantanderfotografia" target="_blank" rel="noopener" class="contact-social-btn">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.linkedin.com/in/kendy-santander-3882286a/" target="_blank" rel="noopener" class="contact-social-btn">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://www.facebook.com/kendysantanderfotografia" target="_blank" rel="noopener" class="contact-social-btn">
+          <i class="fa-brands fa-facebook"></i> Facebook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-tagline" data-i18n="footer_tagline">gracias por visitarnos</p>
+    <a href="#inicio" class="footer-logo">
+      <img src="img/kendy.PNG" alt="Kendy Agencia Audiovisual" class="footer-logo-img">
+    </a>
+    <div class="social-links">
+      <a href="https://www.instagram.com/kendysantanderfotografia" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/kendy-santander-3882286a/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.facebook.com/kendysantanderfotografia" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <nav class="footer-nav">
+      <a href="#inicio" data-i18n="nav_inicio">Inicio</a>
+      <span>|</span>
+      <a href="#experiencia" data-i18n="nav_experiencia">Experiencia</a>
+      <span>|</span>
+      <a href="#portafolio" data-i18n="nav_proyectos">Proyectos</a>
+      <span>|</span>
+      <a href="#contacto" data-i18n="nav_contacto">Contáctame</a>
+    </nav>
+    <p class="copyright">© <span id="year"></span> <span data-i18n="footer_copy">Kendy Agencia Audiovisual. Todos los derechos reservados.</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
